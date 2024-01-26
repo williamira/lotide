@@ -13,7 +13,7 @@ const head = function(array) {
 
 assertEqual(head([5,6,7]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-assertEqual(head([2]), 15);
-assertEqual(head([]), "Welcome");
-assertEqual(head(["William", "Andrea", "Jordan"]), "Andrea");
+assertEqual(head([2]), 2);
+assertEqual(head([]), undefined);
+assertEqual(head(["William", "Andrea", "Jordan"]), "William");
 assertEqual(head([-2, 2, 22]), -2);
