@@ -7,8 +7,7 @@ const assertEqual = function(actual, expected) {
 };
 // Function to return all elements of array except the head
 const tail = function(array) {
-  let tailOfArray = array.slice(1);
-  return tailOfArray;
+  return array.slice(1);
 };
 
 const result = tail([20, 30, 40]);
