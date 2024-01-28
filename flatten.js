@@ -27,7 +27,7 @@ const flatten = function(arrayToBeFlattened) {
   let newArr = [];
   for (const element of arrayToBeFlattened) {
     if (Array.isArray(element)) {
-     newArr = newArr.concat(element);
+      newArr = newArr.concat(element);
     } else {
       newArr.push(element);
     }
