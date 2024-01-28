@@ -19,7 +19,6 @@ const assertArrayEqual = function(array1, array2) {
 };
 
 const middle = function(array) {
-  let newArr = [];
   if (array.length < 3) {
     return []; // returns nothing if the array has 1 or 2 indexes
   } else if (array.length % 2 !== 0) {
