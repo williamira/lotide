@@ -1,14 +1,14 @@
-const eqArrays = function(arr1, arr2) { 
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
-    return false
+    return false;
   }
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) {
       return false;
     }
   }
-  return true
-}
+  return true;
+};
 
 const assertArrayEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
@@ -16,7 +16,7 @@ const assertArrayEqual = function(array1, array2) {
   } else {
     console.log("are not equal");
   }
-}
+};
 
-assertArrayEqual([1, 2, 3], [1, 2, 3])
-assertArrayEqual([1, 2, ], [1, 2, 3])
+assertArrayEqual([1, 2, 3], [1, 2, 3]);
+assertArrayEqual([1, 2,], [1, 2, 3]);
