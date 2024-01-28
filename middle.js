@@ -20,20 +20,18 @@ const assertArrayEqual = function(array1, array2) {
 
 const middle = function(array) {
   let newArr = [];
-    if (array.length < 3) {
-      return []; // returns nothing if the array has 1 or 2 indexes
-    } 
-    else if (array.length % 2 !== 0) {
-      return [array[(array.length - 1) / 2]]; //push middle element for odd array
-    }
-    else {
-      return [array[array.length / 2 - 1], array[array.length / 2]];
-    }
-  };
+  if (array.length < 3) {
+    return []; // returns nothing if the array has 1 or 2 indexes
+  } else if (array.length % 2 !== 0) {
+    return [array[(array.length - 1) / 2]]; //push middle element for odd array
+  } else {
+    return [array[array.length / 2 - 1], array[array.length / 2]];
+  }
+};
 
 assertArrayEqual(middle([1, 2, 3]), [2]);
-assertArrayEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); 
-assertArrayEqual(middle([]), []); 
-assertArrayEqual(middle(["hello", "world"]), []); 
-assertArrayEqual(middle(["howdy", "partner", "looking"]), ["partner"]); 
+assertArrayEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+assertArrayEqual(middle([]), []);
+assertArrayEqual(middle(["hello", "world"]), []);
+assertArrayEqual(middle(["howdy", "partner", "looking"]), ["partner"]);
 
