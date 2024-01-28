@@ -5,8 +5,9 @@ const assertEqual = function(actual, expected) {
     console.log(`⛔🛑🚫 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
+// function that takes 2 arrays and compares them and returns a boolean value of true if they are equal and false if they are not.
 
-const eqArrays = function(arr1, arr2) {
+const eqArrays = function(arr1, arr2) { 
   if (arr1.length !== arr2.length) {
     return false
   }
