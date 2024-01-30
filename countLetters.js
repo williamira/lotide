@@ -14,11 +14,12 @@ const countLetters = function(stringToCount) {
   const letterCounts = {};
 
   for (const character of stringToCount) {
-    if (character !== " ") {
+    
+    if (character !== " ") { // to ignore spaces
       if (letterCounts[character]) {
-        letterCounts[character] += 1;
+        letterCounts[character] += 1; // increments value of characters each time a repeted character is looped over
       } else {
-        letterCounts[character] = 1;
+        letterCounts[character] = 1; // initilizes value of each character
       }
     }
   }
