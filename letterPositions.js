@@ -32,7 +32,7 @@ const letterPositions = function(sentence) {
       if (!result[character]) { // to chech if the character already exists within the object result
         result[character] = []; // If not found it creates an array for values to be pushed for each character
       }
-      result[character].push(i);  // value gets pushed to character array
+      result[character].push(i);  // value gets pushed to character array in result object
     }
   }
 
