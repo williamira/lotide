@@ -37,6 +37,6 @@ const results3 = map(numbersToDouble, num => num * 2); // to multiply each numbe
 
 
 
-assertArrayEqual(results1, ['g', 'c', 't', 'm', 't']);
-assertArrayEqual(results2, []);
-assertArrayEqual(results3, [44, 110, 66, 88, 132]);
+assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']);
+assertArraysEqual(results2, []);
+assertArraysEqual(results3, [44, 110, 66, 88, 132]);

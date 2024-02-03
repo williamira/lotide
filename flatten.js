@@ -10,7 +10,7 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-const assertArrayEqual = function(array1, array2) {
+const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
     console.log(`Assertion passed🟩🟢💚 ${array1} is equal to ${array2}`);
   } else {
@@ -34,7 +34,7 @@ const flatten = function(arrayToBeFlattened) {
   }
   return newArr;
 };
-assertArrayEqual(flatten(["hello", "welcome", ["world"], ["music"]]), ["hello", "welcome", "world", "music"]);
-assertArrayEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
-assertArrayEqual(flatten([2, [], 7, [5, 6]]), [2, 7, 5, 6]);
-assertArrayEqual(flatten([]), []);
+assertArraysEqual(flatten(["hello", "welcome", ["world"], ["music"]]), ["hello", "welcome", "world", "music"]);
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
+assertArraysEqual(flatten([2, [], 7, [5, 6]]), [2, 7, 5, 6]);
+assertArraysEqual(flatten([]), []);

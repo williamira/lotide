@@ -23,7 +23,7 @@ const assertArraysEqual = function(array1, array2) {
  * items to be removed from the sourceArray.
  * The output is to return a new array that has those elements removed without
  * altering the original array.
- * Then test using assertArrayEqual function.
+ * Then test using assertArraysEqual function.
  */
 
 const without = function(source, itemsToBeRemoved) {
@@ -37,11 +37,11 @@ const without = function(source, itemsToBeRemoved) {
 };
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]);
-assertArrayEqual(words, ["hello", "world", "lighthouse"]);
+assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
 const shapes = ["square", "triangle", "circle"];
-assertArrayEqual(without(shapes, ["triangle"]), ["square", "circle"]);
-assertArrayEqual(without([1, 4, 3], [1, 3]), [4]);
-assertArrayEqual(without([3], ["hello"]), [3]);
-assertArrayEqual(without([3], [-2]), [3]);
-assertArrayEqual(without([-5, 7, 24], [-5, 7, 24]), []);
+assertArraysEqual(without(shapes, ["triangle"]), ["square", "circle"]);
+assertArraysEqual(without([1, 4, 3], [1, 3]), [4]);
+assertArraysEqual(without([3], ["hello"]), [3]);
+assertArraysEqual(without([3], [-2]), [3]);
+assertArraysEqual(without([-5, 7, 24], [-5, 7, 24]), []);

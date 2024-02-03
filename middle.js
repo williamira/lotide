@@ -28,9 +28,9 @@ const middle = function(array) {
   }
 };
 
-assertArrayEqual(middle([1, 2, 3]), [2]);
-assertArrayEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
-assertArrayEqual(middle([]), []);
-assertArrayEqual(middle(["hello", "world"]), []);
-assertArrayEqual(middle(["howdy", "partner", "looking"]), ["partner"]);
+assertArraysEqual(middle([1, 2, 3]), [2]);
+assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+assertArraysEqual(middle([]), []);
+assertArraysEqual(middle(["hello", "world"]), []);
+assertArraysEqual(middle(["howdy", "partner", "looking"]), ["partner"]);
 
