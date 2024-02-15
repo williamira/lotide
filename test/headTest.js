@@ -1,8 +1,23 @@
-const assertEqual = require('../assertEqual');
+// const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const head = require('../head');
 
-assertEqual(head([5, 6, 7]), 5); // To test if the returned value is the first element of array of numbers
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello"); //To test if first element in array of strings is returned 
-assertEqual(head([2]), 2); // To test if a array containg only 1 value returns this value
-assertEqual(head([]), undefined); // To test if an empty array returns an undefined
-assertEqual(head([-2, 2, 22]), -2); // to teat if firts element of arr with negative number is returned
+
+describe("#head", () => {
+  it("returns 1 for [1, 2, 3]", () => {
+    assert.strictEqual(head([1, 2, 3]), 1);
+  });
+
+  it("returns '5' for ['5']", () => {
+    assert.strictEqual(head(['5']), '5');
+  });
+
+  it("returns 'Hello' for ['Hello', 'Lighthouse', 'Labs']", () => {
+    assert.strictEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+  });
+
+  it("returns undefined for []", () => {
+    assert.strictEqual(head([]), undefined);
+  });
+
+});
