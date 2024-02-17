@@ -1,24 +1,3 @@
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(array1, array2) {
-  if (eqArrays(array1, array2)) {
-    console.log(`Assertion passed: ${array1} is equal to ${array2}`);
-  } else {
-    console.log(`Assertion failed: ${array1} is not equal to ${array2}`);
-  }
-};
-
-
 // a function to return the indexed location of each letter in a string
 // takes a string as argument
 // loops through string and adds each character to an array nested within an object
@@ -39,10 +18,4 @@ const letterPositions = function(sentence) {
   return result;
 };
 
-
-
-
-assertArraysEqual(letterPositions("hello").e, [1]);
-assertArraysEqual(letterPositions("hello").l, [2, 3]);
-assertArraysEqual(letterPositions("hello").o, [4]);
-assertArraysEqual(letterPositions("hello").h, [0]);
+module.exports = letterPositions;
