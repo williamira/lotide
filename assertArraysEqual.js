@@ -1,4 +1,4 @@
-const eqArrays = require('./eqArrays')
+const eqArrays = require('./eqArrays');
 
 const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) { // calls eqArray function to determine if two arrays have the same elements
@@ -8,4 +8,4 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
-module.exports = assertArraysEqual
+module.exports = assertArraysEqual;
